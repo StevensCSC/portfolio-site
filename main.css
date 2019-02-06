@@ -1,0 +1,130 @@
+html,body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #1155cc;
+    overflow-y: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+.info{
+   width: 40%;
+   height: 100%;
+   padding-left: .5rem;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   left: 0;
+   background-color:  #ffffff;
+   position: static;
+}
+.projects{
+    width: 60%;
+    background-color: #1155cc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-left: .75rem;
+    padding-top: .75rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    justify-content: space-around;    
+}
+
+.name{
+    font-size: 5rem;
+}
+.bio{
+    max-width: 30rem;
+    font-size: 1.75rem;
+}
+
+.links{
+    font-size: 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.links li {
+    margin-bottom: 1rem;
+    padding: .25rem;
+    border-radius: .25rem;
+    text-align: center;
+    background-color: #1155cc;
+}
+.project{
+    width: 15rem;
+    height: 20rem;
+    background-color: #ffffff;
+    margin: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .75rem;
+}
+.project a{
+    text-decoration: none;
+}
+.project img{
+    width: 15rem;
+    height: 15rem;
+    background-color: #000000;
+}
+.projTxt {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+.projName{
+    font-size: 1.5rem;
+}
+
+.profileImg{
+    max-width: 10rem;
+    max-height: 10rem;
+}
+@media only screen and (max-width: 480px)
+{
+    .name{
+        font-size: 2rem;
+    }
+    .bio{
+        max-width: 30rem;
+        font-size: 1rem;
+    }
+    .links{
+        font-size: 1.5rem;
+        padding-left:0;
+    }
+    .projects{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .project{
+        width: 7.5rem;
+        height: 10rem;
+        padding:.25rem;
+    }
+    .project img{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    .projTxt{
+        height: 2rem;
+    }
+    .projName{
+        font-size: 1rem;
+    }
+
+    
+}

@@ -18,6 +18,7 @@ html,body{
    left: 0;
    background-color:  #ffffff;
    position: static;
+   align-items: center;
 }
 .projects{
     width: 60%;
@@ -89,17 +90,24 @@ html,body{
 }
 
 .profileImg{
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 20rem;
+    max-height: 20rem;
 }
 @media only screen and (max-width: 480px)
 {
+    .info{
+        padding: .1rem;
+    }
     .name{
         font-size: 2rem;
     }
     .bio{
         max-width: 30rem;
         font-size: 1rem;
+    }
+    .profileImg{
+        max-width: 10rem;
+        max-height: 10rem;
     }
     .links{
         font-size: 1.5rem;
